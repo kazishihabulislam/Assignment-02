@@ -1,6 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+/* Google Fonts Family Inter Use is Here! */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.inter-resilient {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
+
+/* Resetting default margin, padding, and box-sizing for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Common Reusable CSS Styles is Here */
+.container {
+  max-width: 1920px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+.primary-color {
+  color: rgb(230, 83, 60);
+}
+.primary-bg {
+  color: rgb(230, 83, 60);
+}
+
+/* Header Section Style is Start Here */
+#header {
+  background: rgb(0, 0, 0);
+  
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%);
+}
+/* Logo Content Style is Here */
+.logo-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: leaser(0.1em, 0.2em);
+  text-align: left;
+  -webkit-animation: colorRotate 5s linear 0s infinite;
+  animation: colorRotate 3s linear 0s infinite;
+}
+@keyframes colorRotate {
+  from {
+    color: #4158d0;
+  }
+  20% {
+    color: #c850c0;
+  }
+  50% {
+    color: #484676;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+/* !Logo Content Style is End Here! */
+/* Menu Content Style is Start Here! */
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -o-border-radius: 2.43rem;
+  -webkit-border-radius: 2.43rem;
+  -moz-border-radius: 2.43rem;
+  -ms-border-radius: 2.43rem;
+  border-radius: 2.43rem;
+  margin: 0 0.62rem;
+  padding: 0.25rem 1.25rem;
+}
+.menu-items {
+  list-style: none;
+}
+.menu-items a {
+  color: rgb(255, 255, 255);
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+  text-decoration: none;
+}
+/* Menu Content Style is End Here! */
