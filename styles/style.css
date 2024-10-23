@@ -333,7 +333,6 @@
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  backdrop-filter: blur(20px);
   background: rgba(48, 48, 48, 0.54);
 }
 .subtitle {
@@ -383,7 +382,7 @@
 }
 /* !Run an Extra Mile Section Style is Ends Here! */
 /* BMI Calculator Section Style is Start Here! */
-.bmi-calculator-container{
+.bmi-calculator-container {
   max-width: 50rem;
   width: 70%;
   margin: 3rem auto;
@@ -530,7 +529,7 @@ th {
   padding-left: 0.9rem;
   margin: 0.4rem 0;
 }
-.footer-card{
+.footer-card {
   border: none;
 }
 
@@ -570,5 +569,18 @@ th {
 .student-item h3 {
   font-size: 1.5em;
   margin-top: 15px;
+}
+.copyright{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  color: rgba(253, 238, 238, 0.7);
+}
+.footer-hr {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+  border: 0.9px solid rgba(255, 255, 255, 0.2);
 }
 /* !Student Fitness Program Section Style is Starts Here!  */
