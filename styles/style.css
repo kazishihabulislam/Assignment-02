@@ -187,7 +187,6 @@
   height: 3.5rem;
   color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
-  font-family: Inter;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.3rem;
@@ -393,19 +392,8 @@
 .bmi-section-title {
   padding-bottom: 3rem;
 }
-.bmi-calculator-type {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.8rem;
-  width: 40%;
-}
-.bmi-calculator-form {
+.calculate{
   width: 55%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
 }
 .bmi-form {
   display: flex;
@@ -419,7 +407,7 @@
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
 }
-.bmi-calculator-form input,
+.grid-items-1 input,
 select {
   color: rgba(255, 255, 255, 0.3);
   width: 17rem;
@@ -510,6 +498,34 @@ th {
   text-align: left;
 }
 /* !Meet Our Team Section Style is Ends Here! */
+/* Student Fitness Program Section Style is Starts Here!  */
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.student-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(54, 53, 53, 0.74);
+}
+.student-title{
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.student-img {
+  width: 100%;
+}
+.student-item h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+/* !Student Fitness Program Section Style is Starts Here!  */
+
 /* Footer Section Style is Starts Here! */
 .active {
   width: 60%;
@@ -520,9 +536,9 @@ th {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .social-heading {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
@@ -550,26 +566,6 @@ th {
   padding: 2rem;
   text-align: left;
 }
-/* !Footer Section Style is Ends Here! */
-
-/* Student Fitness Program Section Style is Starts Here!  */
-.student-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-}
-.student-item {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(54, 53, 53, 0.74);
-}
-.student-img {
-  width: 100%;
-}
-.student-item h3 {
-  font-size: 1.5em;
-  margin-top: 15px;
-}
 .copyright{
   font-size: 1rem;
   font-weight: 400;
@@ -583,4 +579,146 @@ th {
   margin: 0 auto;
   border: 0.9px solid rgba(255, 255, 255, 0.2);
 }
-/* !Student Fitness Program Section Style is Starts Here!  */
+/* !Footer Section Style is Ends Here! */
+/* Responsive for screens 576px and smaller */
+@media (max-width: 576px) {
+
+.container,
+.run-section,
+.hero-img-content{
+  width: 90%;
+}
+.nav-container{
+  display: none;
+}
+.mobile-nav{
+  display: block;
+}
+.hero-section{
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+.hero-img{
+  width: 90%;
+}
+.section-img,
+.student-grid{
+  width: 80%;
+  grid-template-columns: repeat(1, 1fr);
+}
+.run-container,
+.bmi-header{
+  width: 90%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.bmi-header,
+.calculate,
+.student-container{
+  width: 80%;
+  text-align: center;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+.calculate{
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+.bmi-form{
+ display: none;
+}
+.bmi-section-title{
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.hero-title,
+.highlight  {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+.primary-description{
+  font-size: 0.87rem;
+}
+.bmi-calculator-container{
+  width: 80%;
+  text-align: left;
+}
+.hero-text-content,
+.habit-section{
+  width: 90%;
+  padding:0 auto;
+}
+.btn-primary,
+.btn-secondary {
+  width: 10rem;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+.btn-card,
+.btn-cta{
+  width: 9rem;
+  height: 4.6rem;
+  font-size: 1rem;
+}
+.btn-card{
+  padding: 0.5rem 0;
+  top: 5rem;
+  right: -20%;
+}
+.btn-cta{
+  left: -1rem;
+  top: 12rem;
+  padding: 0.5rem 0;
+}
+.section-image{
+  width: 100%;
+}
+.btn-container{
+  width: 100%;
+  margin: 0 auto;
+}
+.btn-container{
+  width: 100%;
+  margin: 0 auto;
+}
+.btn-container{
+  width: 100%;
+}
+.primary-heading{
+  font-size: 2rem;
+}
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+.contact-service{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+  .container {
+      padding: 10px;
+  }
+
+  .section-title {
+      font-size: 1.8em; 
+  }
+
+  .section-description {
+      font-size: 1em; 
+  }
+
+  .btn-calculate {
+      width: 100%; 
+      font-size: 1.1em;
+  }
+
+  .bmi-form input {
+      font-size: 1.2em;
+  }
+
+  hr {
+      width: 100%; 
+      margin: 0.93rem 0; 
+  }
+}
