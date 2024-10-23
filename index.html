@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Power Fit</title>
+    <title>Active</title>
+    <script src="https://kit.fontawesome.com/bebff4b1c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="images/fitness.png" type="image/x-icon">
   </head>
-  <body class="homepage">
-    <header class="" id="header">
-      <nav class="navbar container">
-        <div class="logo-content">
-          <h3 class="logo-title">Power<span>Fit</span></h3>
+  <body class="primary-bg">
+    <header class="primary-linear-bg">
+      <nav class="navbar container flex-container flex-space-between">
+        <div class="navbar-brand">
+          <h3 class="logo-title">Active</h3>
         </div>
-        <div class="menu-content">
-          <ul class="menu-list">
-            <li class="menu-items"><a href="">Home</a></li>
-            <li class="menu-items"><a href="">Service</a></li>
-            <li class="menu-items"><a href="">Contact</a></li>
-            <li class="menu-items"><a href="">About</a></li>
+        <div class="nav-container">
+          <ul class="nav-item flex-container gap-xxl radius-large margin-medium padding-medium primary-linear-bg">
+            <li class="nav-link "><a class="bg-primary padding-medium radius-large" href="">Home</a></li>
+            <li class="nav-link"><a href="">Service</a></li>
+            <li class="nav-link"><a href="">Contact</a></li>
+            <li class="nav-link"><a href="">About</a></li>
           </ul>
         </div>
+        <div class="mobile-nav">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
-      <section class="hero-section container">
-        <div class="hero-text-content">
+      <section class="flex-container flex-space-between container">
+        <div class="hero-text-content flex-container flex-column">
           <h3 class="hero-title">
             Get body in<br /><span class="highlight">shape</span> & stay <br />
             healthy
@@ -36,9 +41,9 @@
             well-being ensures long-term success in maintaining a healthy
             lifestyle.
           </p>
-          <div class="btn-primeaction">
+          <div class="flex-container">
             <button class="btn-primary">Join Club Now!</button>
-            <button class="btn-secondary">Download App</button>
+            <button class="btn-secondary radius-large">Download App</button>
           </div>
         </div>
         <div class="hero-img-content">
@@ -57,9 +62,9 @@
         </div>
       </section>
     </header>
-    <main>
-      <section class="habits-section container">
-        <div class="section-content">
+    <main class="">
+      <section class="container flex-container flex-column padding-large">
+        <div class="habit-section flex-container flex-column">
           <h3 class="primary-heading">Change Your Habits</h3>
           <p class="primary-description">
             Changing your habits is the key to transforming your life. Start
@@ -71,9 +76,9 @@
           </p>
         </div>
         <div class="section-img">
-          <div class="circle-photo-card">
+          <div class="flex-container flex-column flex-center">
             <div class="circle-profile">
-              <img src="images/image 3.png" alt="" />
+              <img class="radius-circle" src="images/image 3.png" alt="" />
             </div>
             <h4 class="profile-title">Movement</h4>
             <p class="primary-description">
@@ -82,9 +87,9 @@
               increases vitality.
             </p>
           </div>
-          <div class="circle-photo-card">
+          <div class="flex-container flex-column flex-center">
             <div class="circle-profile">
-              <img src="images/image 2.png" alt="" />
+              <img class="radius-circle" src="images/image 2.png" alt="" />
             </div>
             <h4 class="profile-title">Time</h4>
             <p class="primary-description">
@@ -92,9 +97,9 @@
               meaningful activities that bring growth and fulfillment.
             </p>
           </div>
-          <div class="circle-photo-card">
+          <div class="flex-container flex-column flex-center">
             <div class="circle-profile">
-              <img src="images/image 4.png" alt="" />
+              <img class="radius-circle" src="images/image 4.png" alt="" />
             </div>
             <h4 class="profile-title">Practice</h4>
             <p class="primary-description">
@@ -103,9 +108,9 @@
               going!
             </p>
           </div>
-          <div class="circle-photo-card">
+          <div class="flex-container flex-column flex-center">
             <div class="circle-profile">
-              <img src="images/image 5.png" alt="" />
+              <img class="radius-circle" src="images/image 5.png" alt="" />
             </div>
             <h4 class="profile-title">Weight Loss</h4>
             <p class="primary-description">
@@ -116,8 +121,8 @@
           </div>
         </div>
       </section>
-      <section class="run-extra-mile container">
-        <div class="section-content">
+      <section class="flex-container container secondary-bg radius-large padding-medium">
+        <div class="run-section padding-xl margin-large flex-container flex-column ">
           <h3 class="primary-heading">Run an Extra<br />Mile Easily</h3>
           <p class="primary-description">
             Running an extra mile can be a game-changer for both your physical
@@ -134,17 +139,215 @@
           <button class="btn-primary">Join Now</button>
         </div>
         <div class="section-image">
-          <img src="images/run.jpg" alt="" />
+          <img class="radius-xl" src="images/run.jpg" alt="" />
         </div>
       </section>
-      <section class="bmi-calculator container">
-        <div class="bmi-calculator-content">
+      <section class="primary-bg bmi-section margin-xl">
+        <div class="bmi-calculator-container margin-large flex-container flex-column">
           <h3 class="primary-heading">BMI Calculator</h3>
-          <p class="primary-description">A BMI (Body Mass Index) Calculator is a simple tool used to assess whether an individual is underweight, normal weight, overweight, or obese based on their height and weight. By dividing a person's weight in kilograms by the square of their height in meters, the calculator provides a numerical value that can be interpreted using standard BMI categories. This helps people better understand their body composition and make informed decisions about their health and fitness goals.</p>
+          <p class="primary-description">
+            A BMI (Body Mass Index) Calculator is a simple tool used to assess
+            whether an individual is underweight, normal weight, overweight, or
+            obese based on their height and weight. By dividing a person's
+            weight in kilograms by the square of their height in meters, the
+            calculator provides a numerical value that can be interpreted using
+            standard BMI categories. This helps people better understand their
+            body composition and make informed decisions about their health and
+            fitness goals.
+          </p>
         </div>
-        <div class="bmi-calculator-type"></div>
+      </div>
+       <div class="secondary-bg">
+        <div class="container flex-container bmi-header">
+          <div class="bmi-calculator-type padding-large">
+            <h4 class="bmi-section-title">BMI Calculator Chart</h4>
+            <table class="bmi-table">
+              <tr>
+                <th class="table-heading">BMI</th>
+                <th class="table-heading">Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+          <div class="bmi-calculator-form">
+            <h4 class="bmi-section-title">Calculate your BMI</h4>
+            <p class="primary-description">
+              Calculating your Body Mass Index (BMI) is a straightforward method
+              to assess whether you are in a healthy weight range based on your
+              height and weight. By using a simple formula—weight in kilograms
+              divided by height in meters squared—you can quickly determine your
+              BMI value. This number helps categorize your body weight into
+              standard ranges, such as underweight, normal weight, overweight,
+              and obesity. Understanding your BMI can guide you in making
+              informed decisions about your health and fitness goals,
+              encouraging you to adopt healthier lifestyle habits if needed.
+            </p>
+            <form action="#" class="bmi-form">
+              <div class="grid-items-1">
+                <input type="text" placeholder="Height/cm" />
+                <input type="text" placeholder="Weight/kg" />
+                <input type="text" placeholder="Age" />
+                <label for="">
+                  <select name="" id="" aria-placeholder="Sex">
+                    <option value="">Sex</option>
+                  </select>
+                </label>
+              </div>
+              <div class="grid-items-2">
+               <select name="" id="activity">
+                  <option class="activity" value="">Select an activity factor</option>
+               </select>
+              </div>
+            </form>
+          </div>
+        </div>
+       </div>
       </section>
+      <section class="container">
+        <div class="flex-container flex-column margin-xxl">
+          <div class="meet-section margin-xxl">
+            <h3 class="primary-heading">Meet Our Team</h3>
+          <p class="primary-description">A passionate group of professionals dedicated to helping you achieve your fitness goals. With expertise in strength training, nutrition, and holistic wellness, we are committed to empowering you every step of the way. Together, we bring the energy, knowledge, and support you need to succeed!"
+          </p>
+          </div>
+          <div class="grid-container gap-md padding-xl radius-xl">
+            <div class="grid-item flex-container flex-column flex-center ">
+             
+              <img class="radius-xl" src="images/trainer1.png" alt="">
+              <div class="trainer-info">
+                <h5 class="trainer-name">Jerome Bell <br><span class="primary-description">Trainer</span></h5>
+              </div>
+             
+            </div>
+            <div class="grid-item flex-container flex-column flex-center">
+              
+                <img class="radius-xl" src="images/trainer2.png" alt="">
+                <div class="trainer-info">
+                  <h5 class="trainer-name">Jake Armstrong <br><span class="primary-description">Trainer</span></h5>
+                </div>
+
+            </div>
+            <div class="grid-item flex-container flex-column flex-center">
+             
+                <img class="radius-xl" src="images/trainer3.png" alt="">
+                <div class="trainer-info">
+                  <h5 class="trainer-name">Dylan Harper <br><span class="primary-description">Trainer</span></h5>
+                </div>
+              
+            </div>
+            <div class="grid-item flex-container flex-column flex-center">
+                
+                  <img class="radius-xl" src="images/trainer4.png" alt="">
+                  <div class="trainer-info">
+                    <h5 class="trainer-name">Ryan Steele <br><span class="primary-description">Trainer</span></h5>
+                  </div>
+            
+            </div>
+            <div class="grid-item flex-container flex-column flex-center">
+               
+                <img class="radius-xl" src="images/trainer5.png" alt="">
+                <div class="trainer-info">
+                  <h5 class="trainer-name">Ava Hunter <br><span class="primary-description">Trainer</span></h5>
+                </div>
+               
+            </div>
+          <div class="grid-item flex-container flex-column flex-center">
+            
+              <img class="radius-xl" src="images/trainer6.png" alt="">
+              <div class="trainer-info">
+                <h5 class="trainer-name">Tyler Cruz <br><span class="primary-description">Trainer</span></h5>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="student-section flex-container flex-column flex-center">
+            <div class="student-container flex-container flex-column flex-center margin-xxl">
+              <h3 class="primary-heading">Student Fitness Program</h3>
+            <p class="primary-description">
+              Our **Student Fitness Program** is designed to help students stay healthy and active while balancing their academic responsibilities. Enjoy exclusive discounts on gym memberships, flexible workout schedules, and access to student-only group classes. Whether you’re looking to relieve stress, improve your fitness, or simply stay in shape, our program offers everything you need to maintain a healthy lifestyle while you study. Join today and take advantage of all the benefits tailored to fit your busy student life!
+            </p>
+            </div>
+            <div class="student-grid">
+                <div class="student-item radius-medium">
+                    <img src="images/student-discount1.png" alt="Student Discount" class="student-img radius-medium">
+                    <h4 class="student-title">Student Discounts</h4>
+                    <p class="primary-description">Get up to 20% off on memberships and personal training sessions with a valid student ID.</p>
+                </div>
+                <div class="student-item radius-medium">
+                    <img src="images/student-flexible1.png" alt="Flexible Schedule" class="student-img radius-medium">
+                    <h4 class="student-title">Flexible Schedule</h4>
+                    <p class="primary-description">Access to gyms and virtual workouts to fit your busy academic schedule.</p>
+                </div>
+                <div class="student-item radius-medium">
+                    <img src="images/group-class1.png" alt="Group Classes" class="student-img radius-medium">
+                    <h4 class="student-title">Group Classes</h4>
+                    <p class="primary-description">Join our student-only group fitness classes for fun, motivation, and camaraderie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     </main>
-    <footer></footer>
+    <footer class="secondary-bg">
+      <div class="container flex-container flex-center flex-column gap-xxl">
+        <div class="active flex-container flex-column gap-sm">
+          <h3 class="logo-title">Active</h3>
+          <p class="primary-description">
+            "At Active Fitness, we're committed to helping you lead a healthier, more active lifestyle. Whether you're just starting your fitness journey or looking to push your limits, our expert trainers and resources are here to support you. Stay active, stay fit, and join us in building a stronger, healthier community. Follow us on social media for the latest tips and updates!"
+          </p>
+        </div>
+        <div class="contact flex-container">
+          <div class="contact-service">
+            <h6 class="social-heading">Contact</h6>
+            <ul class="nav-item footer-card">
+              <li class="nav-links">
+                <a class="icon" href="https://www.facebook.com/programmingherowebcourse">Facebook: Active Fitness</a>
+              </li>
+              <li class="nav-links">
+                <a class="icon" href="https://www.instagram.com/programminghero/">Instagram: @activefitness</a>
+              </li>
+              <li class="nav-links">
+                <a class="icon" href="">Twitter: @activefitness</a>
+              </li>
+              <li class="nav-links">
+                <a class="icon" href="https://www.youtube.com/c/ProgrammingHeroCommunity">YouTube: Active Fitness Channel</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-social">
+            <h6 class="social-heading">Follow Us:</h6>
+            <ul class="nav-item footer-card">
+              <li class="nav-links">
+                <a class="icon" href="">Helpline: 01322901105</a>
+              </li>
+              <li class="nav-links">
+                <a class="icon" href="">Email: web@programming-hero.com</a>
+              </li>
+              <li class="nav-links">
+                <a class="icon" href="">Location: Level-4, 34, Awal Centre, Banani, Dhaka</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
